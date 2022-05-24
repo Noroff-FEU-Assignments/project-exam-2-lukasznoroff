@@ -134,6 +134,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  margin-bottom: 100px;
   background-color: #e0d7ce;
   //background-color: #e6d4c6;
   //background-color: #f2efeb;

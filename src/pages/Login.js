@@ -42,7 +42,9 @@ export default function From() {
 
     return (
         <motion.div className="container" variants={pageTransition} initial="hidden" animate="show">
-            <Heading>Login</Heading>
+            <HeadingWrapper>
+                <Heading>Login</Heading>
+            </HeadingWrapper>
             <FormWrapper>
                 {modal && <Modal>The username or password is incorrect</Modal>}
                 <StyledForm onSubmit={handleSubmit(onSubmit)}>
@@ -57,6 +59,12 @@ export default function From() {
     );
 }
 
+const HeadingWrapper = styled.div`
+    h1 {
+        padding: clamp(20px, 1.3vw, 30px) 0;
+        font-size: clamp(20px, 4vw, 58px);
+    }
+`;
 
 const FormWrapper = styled.div`
   height: 70vh;

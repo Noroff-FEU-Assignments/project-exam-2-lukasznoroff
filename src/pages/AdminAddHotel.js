@@ -46,9 +46,9 @@ const AdminAddHotel = () => {
     return (
         <div>
             <StyledForm onSubmit={handleSubmit(onSubmit)}>
-                <textarea {...register("title")} placeholder="title"/>
+                <input {...register("title")} placeholder="hotel"/>
                 <ErrorMsg>{errors.title?.title}</ErrorMsg>
-                <textarea {...register("price")} placeholder="price"/>
+                <input {...register("price")} placeholder="price"/>
                 <ErrorMsg>{errors.price?.price}</ErrorMsg>
                 <textarea {...register("content")} placeholder="content"/>
                 <ErrorMsg>{errors.content?.content}</ErrorMsg>

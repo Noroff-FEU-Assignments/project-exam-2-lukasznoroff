@@ -62,7 +62,7 @@ const WrapContainer = styled.div`
   margin: 100px auto 0;
   word-break: break-all;
   border: 1px solid rgba(0, 0, 0, 0.274);
-
+  margin-bottom: 100px;
   .bloc-tabs {
     display: flex;
   }

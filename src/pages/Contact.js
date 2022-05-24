@@ -59,7 +59,9 @@ export default function From() {
 
     return (
         <motion.div className="container" variants={pageTransition} initial="hidden" animate="show">
-            <Heading>Contact</Heading>
+            <HeadingWrapper>
+                <Heading>Contact</Heading>
+            </HeadingWrapper>
             <FormWrapper>
                 {showModal && <Modal>Your message has been send</Modal>}
                 <StyledForm onSubmit={handleSubmit(onSubmit)}>
@@ -77,6 +79,13 @@ export default function From() {
         </motion.div>
     );
 }
+
+const HeadingWrapper = styled.div`
+    h1 {
+        padding: clamp(20px, 1.3vw, 30px) 0;
+        font-size: clamp(20px, 4vw, 58px);
+    }
+`;
 
 const FormWrapper = styled.div`
   height: 70vh;

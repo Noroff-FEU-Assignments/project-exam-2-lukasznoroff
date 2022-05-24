@@ -108,7 +108,9 @@ const HeadingHeroWrapper = styled.div`
 const HeadingHero = styled.div`
   flex: 1;
   height: 80%;
-
+  h1 {
+    font-size: clamp(20px, 4vw, 78px);
+  }
   .holidaze-color {
     color: #e6b022;
   }

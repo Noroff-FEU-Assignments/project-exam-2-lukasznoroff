@@ -20,8 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     text-transform: uppercase;
-    font-size: 4vw;
-
+    
     max-width: 40vw;
     color: #383838;
     @media (max-width: 768px) {
@@ -67,10 +66,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 5px;
     transition: 0.3s;
     border: 1px solid #000;
-
     &:hover {
       color: #e6b022;
       border: 1px solid #e6b022;
+      cursor: pointer;
+
     }
   }
 

@@ -1,12 +1,13 @@
 import Heading from "../components/Heading";
-import {useNavigate, useParams} from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
-import {useContext} from "react";
+import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 // import {BASE_URL} from "../constants/api";
 // import {useFetch} from "../hooks/useFetch";
 
 import AdminPanel from "./AdminPanel";
+import styled from "styled-components";
 
 
 const Admin = () => {
@@ -20,11 +21,30 @@ const Admin = () => {
 
     return (
         <div className="container">
-            <Heading>Admin</Heading>
-            <button onClick={() => logout()}>Logout</button>
-            <AdminPanel/>
+            <Wrapper>
+                <HeadingWrapper>
+                    <Heading>Admin</Heading>
+                </HeadingWrapper>
+                <div className="button-wrapper">
+                    <button className="btn" onClick={() => logout()}>Logout</button>
+                </div>
+            </Wrapper>
+            <AdminPanel />
         </div>
     );
 };
 
 export default Admin;
+
+const HeadingWrapper = styled.div`
+    h1 {
+        padding: clamp(20px, 1.3vw, 30px) 0;
+        font-size: clamp(20px, 4vw, 58px);
+    }
+`;
+
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
