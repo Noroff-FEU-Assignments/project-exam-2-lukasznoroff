@@ -17,7 +17,7 @@ const AdminContact = () => {
             }
         }
         getPost();
-    },[http])
+    },[])
 
     return (
         <div className="container">

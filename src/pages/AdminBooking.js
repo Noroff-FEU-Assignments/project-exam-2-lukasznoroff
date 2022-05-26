@@ -19,7 +19,7 @@ const AdminBooking = () => {
         }
 
         getPost();
-    }, [http])
+    }, [])
 
     return (
         <div className="container">

@@ -120,6 +120,7 @@ const HeadingHero = styled.div`
     background-color: #fff;
 
     padding-top: 20px;
+    
 
   }
 `;

@@ -6,9 +6,9 @@ import styled from "styled-components";
 import MediaDropdown from "../components/MediaDropdown";
 
 const schema = yup.object().shape({
-    title: yup.string().required().min(1),
-    content: yup.string().required().min(1),
-    price: yup.number().required().min(1),
+    title: yup.string().required().min(5),
+    content: yup.string().required().min(20),
+    price: yup.number().positive().typeError("please enter price")
 });
 
 const AdminAddHotel = () => {
@@ -47,11 +47,11 @@ const AdminAddHotel = () => {
         <div>
             <StyledForm onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("title")} placeholder="hotel"/>
-                <ErrorMsg>{errors.title?.title}</ErrorMsg>
+                <ErrorMsg>{errors.title?.message}</ErrorMsg>
                 <input {...register("price")} placeholder="price"/>
-                <ErrorMsg>{errors.price?.price}</ErrorMsg>
+                <ErrorMsg>{errors.price?.message}</ErrorMsg>
                 <textarea {...register("content")} placeholder="content"/>
-                <ErrorMsg>{errors.content?.content}</ErrorMsg>
+                <ErrorMsg>{errors.content?.message}</ErrorMsg>
                 <MediaDropdown register={register}/>
                 <input className="btn" type="submit" value="Submit"/>
             </StyledForm>

@@ -19,7 +19,7 @@ export default function MediaDropdown({register}) {
         }
         getMedia();
 
-    }, [http]);
+    }, []);
 
     return (
         <select name="featured_media" {...register("featured_media")}>
