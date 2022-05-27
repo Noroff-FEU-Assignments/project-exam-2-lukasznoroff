@@ -1,7 +1,7 @@
 import {Link, NavLink} from "react-router-dom";
 import {useState} from "react";
 import styled from "styled-components";
-import {ReactComponent as Logo} from "../images/logo3.svg";
+import {ReactComponent as Logo} from "../images/holidaze-logo.svg";
 
 
 const Navbar = () => {
