@@ -69,7 +69,10 @@ const HeadingWrapper = styled.div`
       display: flex;
       align-self: center;
       max-height: 20px;
-      padding: 20px
+      padding: 20px;
+      @media (max-width: 768px) {
+        max-width: 40%;
+      }
   }
 `;
 
