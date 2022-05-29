@@ -14,7 +14,6 @@ const Hotels = () => {
     const hotelsURL = `wp/v2/hotel/?_embed&include&per_page=99`;
     const url = `${BASE_URL}${hotelsURL}`;
     const { data: hotels, loading, error } = useFetch(url);
-    console.log(hotels)
     return (
         <motion.div className="container" variants={pageTransition} initial="hidden" animate="show">
             <HeadingWrapper>
@@ -39,7 +38,6 @@ const Hotels = () => {
                             <div className="img-wrapper">
                                 <img src={hotel._embedded["wp:featuredmedia"][0].source_url} alt={hotel.slug} />
                             </div>
-                            {/*<p dangerouslySetInnerHTML={{__html: hotel.content.rendered}}></p>*/}
                             <div className="content-wrapper">
                                 <h3>{hotel.title.rendered}</h3>
                                 <div className="bottom-content">
@@ -77,16 +75,11 @@ const HeadingWrapper = styled.div`
 
 const HotelsContainer = styled.div`
   display: grid;
-  //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 30px;
   grid-gap: 60px;
-  //gap: 5vw;
-
 
   .hotel-wrapper {
-    //width: 100%;
-    //height: 100%;
     height: clamp(420px, 25vw, 400px);
     border: 2px solid #f2efeb;
     background-color: #f2efeb;
@@ -103,7 +96,6 @@ const HotelsContainer = styled.div`
     }
 
     .content-wrapper {
-      //padding: 10px;
       margin-top: 10px;
       padding: 0 8px;
     }
@@ -123,7 +115,6 @@ const HotelsContainer = styled.div`
       }
     }
   }
-
 `;
 
 

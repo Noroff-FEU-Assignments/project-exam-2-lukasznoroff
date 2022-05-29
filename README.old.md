@@ -2,6 +2,10 @@
 There are two options with this Project Exam. 
 You need to only choose one and please follow the deliveries carefully.
 
+login: kfaute
+password: ^pTIMi1gt(^6
+
+
 ## Goal
 To take the skills learned over the last two years and take on an extensive project where the finished product should reflect the candidate's general development capabilities, in addition to visual and technical skills.
 
@@ -80,7 +84,7 @@ Week 7: Bug Fixing
 - Start coding. 
 - Once you’ve finished development, start looking for bugs and ensure the site functions well on all viewports. Test the code on different devices. Because your API is public, the code shouldn’t rely on a local API.
 - Refactor your code.
-- Ask another student to look over your code and ask them if they can see how it might be better implemented. This is important to get an outside view on your code. Please attach this feedback to your report.
+- Ask another student to look over your code and ask them if they can see how it might be better implemented. This is important to get an outside view on your code. 
 - Add the login details for your admin side at the top of this README.md file so that it's easy for the marker to spot.
 
 ### Submission

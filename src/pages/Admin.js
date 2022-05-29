@@ -1,14 +1,9 @@
 import Heading from "../components/Heading";
-import { useNavigate, useParams } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
-// import {BASE_URL} from "../constants/api";
-// import {useFetch} from "../hooks/useFetch";
-
 import AdminPanel from "./AdminPanel";
 import styled from "styled-components";
-
 
 const Admin = () => {
     const [auth, setAuth] = useContext(AuthContext);

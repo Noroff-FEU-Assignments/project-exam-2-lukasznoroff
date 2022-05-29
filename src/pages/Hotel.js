@@ -5,7 +5,6 @@ import {BASE_URL} from "../constants/api";
 import styled from "styled-components";
 import {motion} from "framer-motion";
 import {pageTransition} from "../animation/animation";
-
 import Slider from "../components/Slider"
 import Heading from "../components/Heading";
 import DataRange from "../components/DataRange";
@@ -16,13 +15,13 @@ const Hotel = () => {
     const {id} = useParams();
     const hotelURL = `wp/v2/hotel/${id}?_embed`;
     const url = `${BASE_URL}${hotelURL}`;
-    const {data: hotel, loading} = useFetch(url);
+    const {data: hotel, loading, error} = useFetch(url);
 
-    console.log(hotel)
     return (
         <motion.div className="container" variants={pageTransition} initial="hidden" animate="show">
             <div className="hotel-container">
                 {loading && <Spinner/>}
+                {error && <div className="error-message">An error occurred</div>}
                 {hotel && (
                     <>
                         <ColsWrapper>
@@ -58,7 +57,6 @@ const Hotel = () => {
                                     <p>Free Wi-Fi</p>
                                     <p>TV channels</p>
                                     <p>Video streaming</p>
-
                                 </div>
                                 <div className="section-info-text">
                                     <p>
@@ -87,7 +85,6 @@ export default Hotel;
 const ColsWrapper = styled.div`
   display: flex;
   height: 70vh;
-  //background-color: rgba(210, 199, 187, 0.24);
   justify-content: space-between;
   @media (max-width: 768px) {
     display: block;
@@ -100,8 +97,6 @@ const ColsWrapper = styled.div`
   }
 
   .col-right {
-    //height: clamp(400px, 27vw, 430px);
-    //opacity: 0.5;
     position: relative;
 
     &:before {
@@ -113,13 +108,11 @@ const ColsWrapper = styled.div`
       opacity: 0.3;
       width: 100%;
       filter: blur(30px) saturate(100%);
-
       left: 51%;
       bottom: 49%;
       transform: translate(-50%, 50%);
       width: 100%;
       height: 100%;
-      filter: drop-shadow(46px 44px 44px #e6b022) invert(10%);
       filter: drop-shadow(46px 44px 44px #5d4f29) invert(10%);
     }
 
@@ -127,7 +120,6 @@ const ColsWrapper = styled.div`
       width: 100%;
       height: 100%;
       object-fit: cover;
-
       filter: grayscale(50%);
     }
   }
@@ -137,8 +129,6 @@ const ColsWrapper = styled.div`
     p {
       line-height: 1.6;
     }
-    
-
     h2 {
       margin-bottom: clamp(20px, 2vw, 60px);
     }
@@ -148,11 +138,6 @@ const ColsWrapper = styled.div`
 const SliderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  //width: 40vw;
-  //width: 100%;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
   @media (max-width: 768px) {
     display: block;
     width: 100%;
@@ -162,8 +147,6 @@ const SliderWrapper = styled.div`
     margin-top: 120px;
     flex: 0 0 50%;
     padding-left: clamp(30px, 3vw, 80px);
-    //padding-top: clamp(30px, 3vw, 80px);
-    //background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -174,7 +157,6 @@ const SliderWrapper = styled.div`
       }
       p {
         line-height: 1.5;
-
       }
     }
 
@@ -182,19 +164,13 @@ const SliderWrapper = styled.div`
       display: flex;
       flex-direction: column;
       margin-top: 20px;
-
       h3 {
         margin-bottom: 10px;
       }
-
       p {
         width: clamp(250px, 2vw, 160px);
         padding: 10px 0;
-        //padding: clamp(60px, 2vw, 160px);
-        //background-color: rgba(206, 206, 206, 0.72);
-        //border: 1px solid #000;
       }
-
     }
     
     .section-info-text {
@@ -214,7 +190,6 @@ const SliderWrapper = styled.div`
         &:hover {
           color: #e6b022;
           border: 1px solid #e6b022;
-
         }
       }
     }

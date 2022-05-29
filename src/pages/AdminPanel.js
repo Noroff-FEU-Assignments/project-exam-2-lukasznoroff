@@ -129,7 +129,6 @@ const WrapContainer = styled.div`
 
   .content p {
     width: 100%;
-    //height: 100%;
   }
 
   .active-content {

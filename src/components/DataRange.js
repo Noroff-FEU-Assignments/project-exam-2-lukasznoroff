@@ -17,6 +17,7 @@ const schema = yup.object().shape({
 });
 
 const DataRange = () => {
+  // eslint-disable-next-line 
     const [numGuests, setNumGuest] = useState(1);
     const [showModal, setShowModal] = useState(false);
 
@@ -46,15 +47,11 @@ const DataRange = () => {
 
     async function onSubmit(data) {
         data.status = "publish";
-        console.log(data);
-        console.log(startDate)
         const startDateObject = new Date(data.startDate);
         const endDateObject = new Date(data.endDate);
         const startDateString = generateDateString(startDateObject);
         const endDateString = generateDateString(endDateObject);
 
-        console.log(endDate)
-        console.log(numGuests)
         const message = {
             status: "publish",
             fields: {
@@ -75,7 +72,6 @@ const DataRange = () => {
                 setShowModal(true);
                 reset();
             }
-
         } catch (error) {
             console.log("error", error);
         }
@@ -102,6 +98,7 @@ const DataRange = () => {
                         <span>Check-in</span>
                         <input name="startDate" type="date" value={todayString} {...register("startDate")}
                                onChange={(event => setStartDate(event.target.value))}
+                               // eslint-disable-next-line 
                                value={startDate}
                                placeholder="check-in date"/>
                     </label>
@@ -109,6 +106,7 @@ const DataRange = () => {
                         <span>Check-out</span>
                         <input name="endDate" type="date" value={todayString} {...register("endDate")}
                                onChange={(event => setEndDate(event.target.value))}
+                               // eslint-disable-next-line 
                                value={endDate}
                                placeholder="check-out date"/>
                     </label>
@@ -136,8 +134,6 @@ const Wrapper = styled.div`
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: #e0d7ce;
-  //background-color: #e6d4c6;
-  //background-color: #f2efeb;
   padding: 40px;
 
   span {
@@ -150,7 +146,6 @@ const Wrapper = styled.div`
   }
 `;
 
-
 const Calender = styled.div`
   display: flex;
   flex-direction: column;
@@ -160,7 +155,6 @@ const Calender = styled.div`
   @media (max-width: 768px) {
     max-width: 100%;
   }
-
 
   label, input {
     display: flex;
@@ -201,6 +195,7 @@ const BookingForm = styled.div`
   input {
     padding: 10px;
   }
+  
   @media (max-width: 768px) {
     max-width: 100%;
     margin-bottom: 30px;

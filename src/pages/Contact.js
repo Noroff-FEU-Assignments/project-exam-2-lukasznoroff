@@ -30,7 +30,6 @@ export default function From() {
 
     async function onSubmit(data){
         data.status = "publish";
-        console.log(data);
 
         const message = {
             title: data.title,

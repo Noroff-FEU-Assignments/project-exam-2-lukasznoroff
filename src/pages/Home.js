@@ -42,13 +42,7 @@ const Home = () => {
                             </motion.h2>
                             <Link to="/hotels">
                                 <Arrow/>
-
                             </Link>
-                            {/*<motion.svg variants={svgArrow}  width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
-                            {/*    <rect width="48"   height="48" fill="white" fill-opacity="0.01"/>*/}
-                            {/*    <motion.path initial={{pathLength: 0, pathOffset: 1}} animate={{pathLength:1 ,pathOffset:0}}  transition={{duration: 8}}  d="M41.9999 24H5.99992" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>*/}
-                            {/*    <path d="M30 12L42 24L30 36" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>*/}
-                            {/*</motion.svg>*/}
                         </div>
                     </motion.div>
                 </div>
@@ -67,30 +61,25 @@ const HeadingHeroWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 90vh;
-  //padding: 2vw 5vw;
   @media (max-width: 768px) {
     display: block;
     height: auto;
+    position: relative;
   }
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    //height: 30px;
     top: 50%;
     position: absolute;
-    //left: 20%;
     @media (max-width: 768px) {
-      top: 93vw;
-
-      //transform: translate(0,-100%);
+      top: 90vw;
     }
 
     .heading-hero-slice:last-child {
       display: flex;
       align-items: center;
       justify-content: space-between;
-
     }
 
     .hero-text {
@@ -118,10 +107,7 @@ const HeadingHero = styled.div`
   .heading-hero-slice {
     overflow: hidden;
     background-color: #fff;
-
     padding-top: 20px;
-    
-
   }
 `;
 
