@@ -10,11 +10,84 @@ Holidaze is a website for a travel agency in Bergen, where visitors can find hot
 The project consists of two parts
 the first is a visitors' site, where visitors can search for hotels and make inquiries, and the second is an administration site, where visitors can add hotels and manage their inquiries. I created a WordPress REST API to store facility data, inquiries, and contact requests. 
 
+### Login and Password
+
+login: kfaute
+
+password: ^pTIMi1gt(^6
+
+The app has the following pages:
+
+### Home
+
+### Hotels
+
+A results page with all hotels with search bar typeahead (auto dropdown with hotel names that match what has been typed).
+
+### Hotel
+
+Hotel page contains descriptions of the hotel, photos of the rooms in the slider, and descriptions of the rooms. At the bottom of the page is reservation form.
+
+### Contact
+
+-   Name - required, minimum 3 characters
+-   Surname - required, minimum 4 characters
+-   Email - required, must be in a valid email format
+-   Message - required, minimum 10 characters.
+
+### Login
+
+Login requires a user name and password.
 
 
+### Admin
+
+- List of enquiries and new enquiries appear when user submits the form on the enquiry page
+- List of messages from contact form
+- The admin can create a new establishment
+---
+
+## Built With
+
+- [React.js](https://reactjs.org/)
+- [Wordpress](https://wordpress.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Framer Motion](https://styled-components.com/](https://www.framer.com/motion/)
 
 
+---
+## Getting Started
 
+### Installing
+
+1. Clone the repo:
+
+```bash
+https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-lukasznoroff
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+
+To run the app, run the following command:
+
+```bash
+npm start
+```
+
+
+## Contact
+
+
+[My Website](#)
+
+[My LinkedIn page](https://www.linkedin.com/feed/)
 
 
 
@@ -22,9 +95,7 @@ the first is a visitors' site, where visitors can search for hotels and make inq
 
 # Getting Started with Create React App
 
-login: kfaute
 
-password: ^pTIMi1gt(^6
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
