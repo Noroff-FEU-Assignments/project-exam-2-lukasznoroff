@@ -1,3 +1,23 @@
+
+# Holidaze Bergen Project Exam 2
+
+
+ ![Front-End Developer]()
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 login: kfaute
