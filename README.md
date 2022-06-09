@@ -2,7 +2,7 @@
 # Holidaze Bergen Project Exam 2
 
 
- ![Front-End Developer]()
+ ![Front-End Developer](https://github.com/Noroff-FEU-Assignments/project-exam-2-lukasznoroff/blob/main/project-exam-2.jpg)
 
 
 ---
