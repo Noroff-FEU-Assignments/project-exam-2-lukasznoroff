@@ -10,11 +10,17 @@ Holidaze is a website for a travel agency in Bergen, where visitors can find hot
 The project consists of two parts
 the first is a visitors' site, where visitors can search for hotels and make inquiries, and the second is an administration site, where visitors can add hotels and manage their inquiries. I created a WordPress REST API to store facility data, inquiries, and contact requests. 
 
+&nbsp;
+
 ### Login and Password
 
 login: kfaute
 
 password: ^pTIMi1gt(^6
+
+
+&nbsp;
+
 
 The app has the following pages:
 
@@ -33,7 +39,7 @@ Hotel page contains descriptions of the hotel, photos of the rooms in the slider
 -   Name - required, minimum 3 characters
 -   Surname - required, minimum 4 characters
 -   Email - required, must be in a valid email format
--   Message - required, minimum 10 characters.
+-   Message - required, minimum 20 characters.
 
 ### Login
 
