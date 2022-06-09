@@ -6,7 +6,9 @@
 
 
 ---
-
+Holidaze is a website for a travel agency in Bergen, where visitors can find hotels, and where accommodation owners can receive inquiries.
+The project consists of two parts
+the first is a visitors' site, where visitors can search for hotels and make inquiries, and the second is an administration site, where visitors can add hotels and manage their inquiries. I created a WordPress REST API to store facility data, inquiries, and contact requests. 
 
 
 
@@ -21,6 +23,7 @@
 # Getting Started with Create React App
 
 login: kfaute
+
 password: ^pTIMi1gt(^6
 
 
