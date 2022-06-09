@@ -52,7 +52,7 @@ Login requires a user name and password.
 - [React.js](https://reactjs.org/)
 - [Wordpress](https://wordpress.org/)
 - [Styled-Components](https://styled-components.com/)
-- [Framer Motion](https://styled-components.com/](https://www.framer.com/motion/)
+- [Framer Motion](https://www.framer.com/motion/)
 
 
 ---
@@ -63,7 +63,7 @@ Login requires a user name and password.
 1. Clone the repo:
 
 ```bash
-https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-lukasznoroff
+https://github.com/Noroff-FEU-Assignments/project-exam-2-lukasznoroff.git
 ```
 
 2. Install the dependencies:
