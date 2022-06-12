@@ -34,7 +34,7 @@ A results page with all hotels with search bar typeahead (auto dropdown with hot
 
 Hotel page contains descriptions of the hotel, photos of the rooms in the slider, and descriptions of the rooms. At the bottom of the page is reservation form.
 
-### Contact
+### Contact form with validation [useForm](https://react-hook-form.com/api/useform/) and [Yup](https://www.npmjs.com/package/yup)
 
 -   Name - required, minimum 3 characters
 -   Surname - required, minimum 4 characters
